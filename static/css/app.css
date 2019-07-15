@@ -6101,7 +6101,7 @@ p {
         font-family: 'Dancing Script', cursive; }
 
 body {
-  color: #2d2c35; }
+  overflow-x: hidden; }
 
 section {
   padding: 8rem 0;
@@ -6159,21 +6159,21 @@ figure {
       background-color: #800020; }
 
 #quotes {
-  color: white; }
+  color: white;
+  background: url("/static/img/charleston.jpg") no-repeat fixed center center/cover; }
 
 .owl-carousel .owl-dots .owl-dot.active span {
   background-color: #800020 !important; }
 
 .owl-overlay {
-  background: url("/static/img/charleston.jpg") no-repeat fixed center center;
+  background-color: rgba(0, 0, 0, 0.4);
   background-size: cover;
   position: absolute;
   height: 100%;
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 2;
-  filter: brightness(30%) opacity(80%); }
+  z-index: 2; }
 
 .relative-z {
   position: relative;

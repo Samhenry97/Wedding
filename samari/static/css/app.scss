@@ -76,7 +76,7 @@ p {
 }
 
 body {
-  color: rgb(45, 44, 53);
+  overflow-x: hidden;
 }
 
 section {
@@ -146,6 +146,7 @@ figure {
 
 #quotes {
   color: white;
+  background: url('/static/img/charleston.jpg') no-repeat fixed center center / cover;
 }
 
 .owl-carousel {
@@ -155,7 +156,7 @@ figure {
 }
 
 .owl-overlay {
-  background: url('/static/img/charleston.jpg') no-repeat fixed center center;
+  background-color: rgba(0, 0, 0, 0.4);
   background-size: cover;
   position: absolute;
   height: 100%;
@@ -163,7 +164,6 @@ figure {
   left: 0;
   top: 0;
   z-index: 2;
-  filter: brightness(30%) opacity(80%);
 }
 
 .relative-z {
