@@ -6165,14 +6165,19 @@ figure {
   background-color: #800020 !important; }
 
 .owl-overlay {
-  background-image: url("/static/img/charleston.jpg");
+  background: url("/static/img/charleston.jpg") no-repeat fixed center center;
   background-size: cover;
   position: absolute;
   height: 100%;
   width: 100%;
   left: 0;
   top: 0;
+  z-index: 2;
   filter: brightness(30%) opacity(80%); }
+
+.relative-z {
+  position: relative;
+  z-index: 3; }
 
 .tline {
   margin-top: 3rem;
