@@ -6101,7 +6101,8 @@ p {
         font-family: 'Dancing Script', cursive; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  width: 100%; }
 
 section {
   padding: 8rem 0;
