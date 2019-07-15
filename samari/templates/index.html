@@ -1,0 +1,253 @@
+{% extends "skeleton.html" %}
+
+{% load static %}
+
+{% block title %} {{block.super}} - Home {% endblock %}
+
+{% block head %}
+{{block.super}}
+<!-- Countdown Timer -->
+<script src="{% static 'js/countdown.js' %}" type="text/javascript"></script>
+
+<!-- Owl Carousel -->
+<script src="{% static 'js/owl.js' %}" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'css/owl.css' %}"/>
+{% endblock %}
+
+{% block content %}
+<div class="home-header">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <div class="hearth-center"></div>
+        <h1><span class="text-primary">A</span>rianna &amp; <span class="text-primary">S</span>am</h1>
+        <h2>Our Wedding</h2>
+        <h4>January 4, 2020</h4>
+        <div id="home-countdown"></div>
+        <h1 class="animated infinite fadeOutDown"><a href="#"><i class="fa fa-angle-down"></i></a></h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="big-head-wrap">
+          <img class="headline-hearth" src="{% static 'img/headline-hearth.svg' %}"/>
+        </div>
+        <h2 class="big-heading">About <span class="text-primary">Us</span></h2>
+        <img class="big-heading-underline" src="{% static 'img/headline-simple.svg' %}"/>
+        <p class="sub-heading col-lg-8 offset-lg-2 margin-b-5">Some random information.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 text-center margin-xs-b-2 margin-sm-b-2">
+        <figure>
+          <img class="img-fluid rounded-circle aos-init aos-animate" src="{% static 'img/ari.jpg' %}" data-aos="fade-right" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"/>
+        </figure>
+        <div class="about-content col-sm-8 offset-sm-2">
+          <h4>Arianna Smith <span class="text-primary">Bride</span></h4>
+          <p>Some information about Arianna</p>
+          <ul class="social-link">
+            <li class="d-inline-block aos-init aos-animate" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200" data-aos-offset="200">
+              <a target="_blank" href="https://www.facebook.com/asmithofmany"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="d-inline-block aos-init aos-animate" data-aos="fade-up" data-aos-duration="300" data-aos-delay="400" data-aos-offset="200">
+              <a target="_blank" href="https://www.instagram.com/arianna_victoria/"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <figure>
+          <img class="img-fluid rounded-circle aos-init aos-animate" src="{% static 'img/sam.jfif' %}" data-aos="fade-left" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"/>
+        </figure>
+        <div class="about-content col-sm-8 offset-sm-2">
+          <h4>Samuel Henry <span class="text-primary">Groom</span></h4>
+          <p>Some information about Samuel</p>
+          <ul class="social-link">
+            <li class="d-inline-block aos-init aos-animate" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200" data-aos-offset="200">
+              <a target="_blank" href="https://www.facebook.com/samuel.henry.97"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="d-inline-block aos-init aos-animate" data-aos="fade-up" data-aos-duration="300" data-aos-delay="400" data-aos-offset="200">
+              <a target="_blank" href="https://www.instagram.com/samhenry97/"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quotes">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="owl-carousel owl-theme">
+          <div>
+            <h3 class="heading text-center">I can't brag about my love for God because I fail Him daily, but I can brag about His love for me because it never fails.</h3>
+          </div>
+          <div>
+            <h3 class="heading text-center">There is never a time or place for true love. It happens accidentally, in a heartbeat, in a single flashing, throbbing moment.</h3>
+          </div>
+          <div>
+            <h3 class="heading text-center">Love lets you find those hidden places in another person, even the ones they didn’t know were there, even the ones they wouldn’t have thought to call beautiful themselves.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="owl-overlay"></div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="big-head-wrap">
+          <img class="headline-hearth" src="{% static 'img/headline-hearth.svg' %}"/>
+        </div>
+        <h2 class="big-heading">Our <span class="text-primary">Love</span> Story</h2>
+        <img class="big-heading-underline" src="{% static 'img/headline-simple.svg' %}"/>
+        <p class="sub-heading col-lg-8 offset-lg-2 margin-b-5">We're in love!</p>
+      </div>
+    </div>
+
+    <div class="tline">
+      <div class="row">
+        <div class="tline-left col-sm-12 col-md-6 text-center">
+          <div class="tline-img aos-init aos-animate" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-out-cubic">
+            <img src="{% static 'img/first-met.jpg' %}"/>
+            <div class="tline-date">
+              <div class="day">27</div>
+              <div class="month">aug</div>
+              <div class="year">2017</div>
+            </div>
+          </div>
+        </div>
+        <div class="tline-right col-sm-12 col-md-6 text-left date-circle margin-b-2">
+          <div class="tline-arrow"><i class="fa fa-chevron-right"></i></div>
+          <h4 class="tline-title font-weight-light">First met</h4>
+          <p>We met at the beginning of Arianna's Sophomore year and Samuel's Junior year of college. God had been working in both of our hearts to change churches, so we both decided to try out Grace Baptist Fellowship. We carpooled with two of our closest friends, and started running into each other everywhere after that.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="tline-right col-sm-12 col-md-6 text-center">
+          <div class="tline-img aos-init aos-animate" data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-out-cubic">
+            <img src="{% static 'img/first-date.jpeg' %}"/>
+            <div class="tline-date">
+              <div class="day">19</div>
+              <div class="month">oct</div>
+              <div class="year">2017</div>
+            </div>
+          </div>
+        </div>
+        <div class="tline-left col-sm-12 col-md-6 text-left date-circle margin-b-2">
+          <div class="tline-arrow"><i class="fa fa-chevron-left"></i></div>
+          <h4 class="tline-title font-weight-light">First Date</h4>
+          <p>Our first "official" date was Artist Series at Bob Jones University. We went with the same people that we carpooled with when we first met. It was an absolute blast!</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="tline-left col-sm-12 col-md-6 text-center">
+          <div class="tline-img aos-init aos-animate" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-out-cubic">
+            <img src="{% static 'img/dating.jpeg' %}"/>
+            <div class="tline-date">
+              <div class="day">7</div>
+              <div class="month">jan</div>
+              <div class="year">2018</div>
+            </div>
+          </div>
+        </div>
+        <div class="tline-right col-sm-12 col-md-6 text-left date-circle margin-b-2">
+          <div class="tline-arrow"><i class="fa fa-chevron-right"></i></div>
+          <h4 class="tline-title font-weight-light">Started Dating</h4>
+          <p>Samuel attended a wedding of a good friend in Maryland and traveled up to see Arianna the day after. On that day, we started dating. It's been a whirlwind, joy, and blessing ever since!</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="tline-right col-sm-12 col-md-6 text-center">
+          <div class="tline-img aos-init aos-animate" data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-out-cubic">
+            <img src="{% static 'img/iloveyou.jpg' %}"/>
+            <div class="tline-date">
+              <div class="day">22</div>
+              <div class="month">mar</div>
+              <div class="year">2018</div>
+            </div>
+          </div>
+        </div>
+        <div class="tline-left col-sm-12 col-md-6 text-left date-circle margin-b-2">
+          <div class="tline-arrow"><i class="fa fa-chevron-left"></i></div>
+          <h4 class="tline-title font-weight-light">I Love You</h4>
+          <p>We went to New York city during spring break at college. After a full day of activity, the first "I Love You" was on top of the Empire State Building.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="tline-left col-sm-12 col-md-6 text-center">
+          <div class="tline-img aos-init aos-animate" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-out-cubic">
+            <img src="{% static 'img/engaged.jpeg' %}"/>
+            <div class="tline-date">
+              <div class="day">17</div>
+              <div class="month">may</div>
+              <div class="year">2019</div>
+            </div>
+          </div>
+        </div>
+        <div class="tline-right col-sm-12 col-md-6 text-left date-circle margin-b-2">
+          <div class="tline-arrow"><i class="fa fa-chevron-right"></i></div>
+          <h4 class="tline-title font-weight-light">Engaged!</h4>
+          <p>We went on a missions trip to Antigua in May of 2019. On the last day there, the missionaries and team leaders helped Samuel set up for the engagement. We got engaged on one of the most beautiful beaches on the island!</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="tline-right col-sm-12 col-md-6 text-center">
+          <div class="tline-img aos-init aos-animate" data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-out-cubic">
+            <img src="{% static 'img/marriage.jpeg' %}"/>
+            <div class="tline-date">
+              <div class="day">4</div>
+              <div class="month">jan</div>
+              <div class="year">2020</div>
+            </div>
+          </div>
+        </div>
+        <div class="tline-left col-sm-12 col-md-6 text-left date-circle margin-b-2">
+          <div class="tline-arrow"><i class="fa fa-chevron-left"></i></div>
+          <h4 class="tline-title font-weight-light">Wedding</h4>
+          <p>We can't wait to be married!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="big-head-wrap">
+          <img class="headline-hearth" src="{% static 'img/headline-hearth.svg' %}"/>
+        </div>
+        <h2 class="big-heading"><span class="text-primary">Important</span> People</h2>
+        <img class="big-heading-underline" src="{% static 'img/headline-simple.svg' %}"/>
+        <p class="sub-heading col-lg-8 offset-lg-2 margin-b-5">We're excited to have them!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+new Countdown({
+  selector: '#home-countdown',
+  msgAfter: '<div class="countdown-item"><div>We\'re Married!</div></div>',
+  msgPattern: '<div class="countdown-item"><div>{days}</div><div>Days</div></div> <div class="countdown-item"><div>{hours}</div><div>Hours</div></div> <div class="countdown-item"><div>{minutes}</div><div>Mins</div></div> <div class="countdown-item"><div>{seconds}</div><div>Secs</div></div>',
+  dateEnd: new Date('Jan 4, 2020 13:00')
+});
+</script>
+{% endblock %}
