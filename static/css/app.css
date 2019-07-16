@@ -6046,8 +6046,25 @@ h1 {
 h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif; }
 
+h3 {
+  font-size: 1.2rem; }
+
 p {
   font-family: 'Muli', sans-serif; }
+
+body {
+  overflow-x: hidden;
+  width: 100%; }
+
+section {
+  padding: 8rem 0;
+  position: relative; }
+
+figure {
+  margin: 0 0 1rem;
+  padding: 3rem; }
+  figure img {
+    width: 100%; }
 
 .home-header {
   height: 100vh;
@@ -6099,20 +6116,6 @@ p {
         font-size: 2em;
         color: #800020;
         font-family: 'Dancing Script', cursive; }
-
-body {
-  overflow-x: hidden;
-  width: 100%; }
-
-section {
-  padding: 8rem 0;
-  position: relative; }
-
-figure {
-  margin: 0 0 1rem;
-  padding: 3rem; }
-  figure img {
-    width: 100%; }
 
 .big-head-wrap {
   position: absolute;
@@ -6256,5 +6259,65 @@ figure {
     @media (max-width: 991.98px) {
       .tline .tline-arrow {
         display: none; } }
+
+.details h3 {
+  margin-top: 2rem; }
+
+@media (min-width: 768px) {
+  .details .details-1 {
+    order: 2;
+    padding-left: 2rem; }
+  .details .details-2 {
+    order: 1;
+    text-align: right;
+    padding-right: 2rem; } }
+
+#ceremony h3 {
+  cursor: pointer; }
+
+#ceremony > div {
+  margin-left: 64px;
+  position: relative; }
+  #ceremony > div:not(:last-child):after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: #D2D2D2;
+    left: -44px;
+    top: -8px;
+    bottom: -32px; }
+
+#ceremony .ceremony-number {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #D2D2D2;
+  border-radius: 4px;
+  color: #800020;
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  transition-duration: 1s; }
+
+#ceremony h3.ui-accordion-header-active {
+  color: #800020; }
+  #ceremony h3.ui-accordion-header-active .ceremony-number {
+    border-color: #800020;
+    margin-right: 16px; }
+
+.registry-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid #D2D2D2;
+  margin-top: 2rem;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2); }
+  .registry-item i {
+    font-size: 3rem;
+    color: #D2D2D2;
+    margin-bottom: 1rem; }
+  .registry-item h2 {
+    margin-bottom: 2rem; }
 
 /*# sourceMappingURL=app.css.map */

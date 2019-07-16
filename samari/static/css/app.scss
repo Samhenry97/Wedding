@@ -17,8 +17,28 @@ h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
 }
 
+h3 {
+  font-size: 1.2rem;
+}
+
 p {
   font-family: 'Muli', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+section {
+  padding: 8rem 0;
+  position: relative;
+}
+
+figure {
+  margin: 0 0 1rem;
+  padding: 3rem;
+  img { width: 100%; }
 }
 
 .home-header {
@@ -73,22 +93,6 @@ p {
       }
     }
   }
-}
-
-body {
-  overflow-x: hidden;
-  width: 100%;
-}
-
-section {
-  padding: 8rem 0;
-  position: relative;
-}
-
-figure {
-  margin: 0 0 1rem;
-  padding: 3rem;
-  img { width: 100%; }
 }
 
 .big-head-wrap {
@@ -276,5 +280,85 @@ figure {
     @include media-breakpoint-down(md) {
       display: none;
     }
+  }
+}
+
+.details {
+  h3 {
+    margin-top: 2rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    .details-1 {
+      order: 2;
+      padding-left: 2rem;
+    }
+    .details-2 {
+      order: 1;
+      text-align: right;
+      padding-right: 2rem;
+    }
+  }
+}
+
+#ceremony {
+  h3 {
+    cursor: pointer;
+  }
+
+  > div {
+    margin-left: 64px;
+    position: relative;
+
+    &:not(:last-child):after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      background-color: theme-color('light');
+      left: -44px;
+      top: -8px;
+      bottom: -32px;
+    }
+  }
+
+  .ceremony-number {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid theme-color('light');
+    border-radius: 4px;
+    color: theme-color('primary');
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    transition-duration: 1s;
+  }
+
+  h3.ui-accordion-header-active {
+    color: theme-color('primary');
+    .ceremony-number {
+      border-color: theme-color('primary');
+      margin-right: 16px;
+    }
+  }
+}
+
+.registry-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid theme-color('light');
+  margin-top: 2rem;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+
+  i {
+    font-size: 3rem;
+    color: theme-color('light');
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
   }
 }

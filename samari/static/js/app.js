@@ -6,4 +6,10 @@ $(document).ready(function(){
     dots: true,
     autoplay: true
   });
+
+  $('#ceremony').accordion();
+});
+
+$(window).on('load', function () {
+  AOS.refresh();
 });
