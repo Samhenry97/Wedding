@@ -6,6 +6,16 @@ $(document).ready(function(){
     dots: true,
     autoplay: true
   });
+
+  $('a[href*="#"]').on('click', function(event) {
+    event.preventDefault();
+
+    $('html, body').animate(
+      { scrollTop: $($(this).attr('href')).offset().top },
+      500,
+      'linear'
+    );
+  });
 });
 
 $(window).on('load', function () {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Pinyon+Script|Raleway|Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Dosis|Great+Vibes|Raleway|Muli&display=swap');
 
 $theme-colors: (
   'primary': #700808,
@@ -9,8 +9,9 @@ $theme-colors: (
 @import 'bootstrap/bootstrap';
 
 h1 {
-  font-family: 'EB Garamond', cursive;
-  font-size: 3em;
+  font-family: 'Great Vibes', cursive;
+  font-size: 4em;
+  margin: 0;
 }
 
 h2, h3, h4, h5, h6 {
@@ -59,6 +60,11 @@ figure {
     filter: opacity(20%) blur(2px);
   }
 
+  h2 {
+    font-family: 'Dosis';
+    letter-spacing: 2px;
+  }
+
   .hearth-center {
     position: absolute;
     left: 0;
@@ -74,24 +80,6 @@ figure {
     @include media-breakpoint-only(lg) { top: -90px; }
     @include media-breakpoint-only(md) { top: -50px; }
     @include media-breakpoint-only(sm) { top: -20px; }
-  }
-
-  #home-countdown {
-    display: inline-flex;
-    justify-content: center;
-    margin: 3rem auto;
-
-    @include media-breakpoint-down(md) { margin: 1rem auto; }
-
-    .countdown-item {
-      padding: 16px;
-
-      div:first-child {
-        font-size: 2em;
-        color: theme-color('primary');
-        font-family: 'EB Garamond', cursive;
-      }
-    }
   }
 }
 
@@ -113,7 +101,7 @@ figure {
 .big-heading {
   margin-bottom: 1rem;
   line-height: 1em;
-  font-family: 'Pinyon Script', cursive;
+  font-family: 'Great Vibes', cursive;
   font-size: 2.5rem;
 }
 
@@ -221,7 +209,7 @@ figure {
     }
 
     .tline-arrow {
-      right: 33px;
+      right: 40px;
     }
   }
 
@@ -231,15 +219,22 @@ figure {
       padding-left: 70px;
 
       &::after {
-        content: '';
+        content: '\f004';
+        font-family: 'Font Awesome 5 Pro';
+        color: white;
+        font-weight: 900;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: theme-color('primary');
-        border: 3px solid theme-color('light');
+        border: 3px solid theme-color('secondary');
         border-radius: 50%;
-        height: 20px;
-        width: 20px;
         position: absolute;
-        top: 25px;
-        left: -10px;
+        width: 40px;
+        height: 40px;
+        top: 16px;
+        left: -20px;
       }
     }
 
@@ -248,7 +243,7 @@ figure {
     }
 
     .tline-arrow {
-      left: 33px;
+      left: 40px;
     }
   }
 
@@ -299,6 +294,46 @@ figure {
       padding-right: 2rem;
     }
   }
+}
+
+#countdown {
+  background-image: url('/static/img/tiled.png');
+
+  #home-countdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem auto;
+
+    @include media-breakpoint-down(md) { margin: 1rem auto; }
+
+    .countdown-item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 120px;
+      background-color: white;
+      border-radius: 6px;
+      margin: 1rem;
+      border: 2px solid theme-color('light');
+      padding-bottom: 1rem;
+
+      div:first-child {
+        font-size: 3rem;
+        color: theme-color('primary');
+        font-family: 'EB Garamond', cursive;
+      }
+
+      div:last-child {
+        font-family: 'Dosis';
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+#event {
+  padding-bottom: 0;
 }
 
 #ceremony {
@@ -357,4 +392,46 @@ figure {
   h2 {
     margin-bottom: 2rem;
   }
+}
+
+.party-holder {
+  @include media-breakpoint-up(sm) {
+    &:first-child { padding-right: 3rem; }
+    &:last-child { padding-left: 3rem; }
+  }
+}
+
+.party {
+  margin-top: 1rem;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+  transition-duration: 0.25s;
+
+  .party-img {
+    @include media-breakpoint-up(lg) { height: 180px; }
+    @include media-breakpoint-only(md) { height: 120px; }
+    @include media-breakpoint-only(sm) { height: 180px; }
+    @include media-breakpoint-only(xs) { height: 256px; }
+    overflow: hidden;
+    img {
+      width: 100%;
+      transition-duration: 0.5s;
+      transform: scale(1.2);
+      &:hover {
+        transform: rotate(8deg) scale(1.4);
+      }
+    }
+  }
+  .party-content {
+    padding: 8px;
+    p { margin: 0; }
+  }
+
+  &:hover {
+    background-color: theme-color-level('light', -4);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
+.top-margin {
+  margin-top: 2rem;
 }

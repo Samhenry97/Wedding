@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=EB+Garamond|Pinyon+Script|Raleway|Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond|Dosis|Great+Vibes|Raleway|Muli&display=swap");
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -6040,8 +6040,9 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #ddd !important; } }
 
 h1 {
-  font-family: 'EB Garamond', cursive;
-  font-size: 3em; }
+  font-family: 'Great Vibes', cursive;
+  font-size: 4em;
+  margin: 0; }
 
 h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif; }
@@ -6081,6 +6082,9 @@ figure {
     background-repeat: no-repeat;
     background-size: cover;
     filter: opacity(20%) blur(2px); }
+  .home-header h2 {
+    font-family: 'Dosis';
+    letter-spacing: 2px; }
   .home-header .hearth-center {
     position: absolute;
     left: 0;
@@ -6103,19 +6107,6 @@ figure {
     @media (min-width: 576px) and (max-width: 767.98px) {
       .home-header .hearth-center {
         top: -20px; } }
-  .home-header #home-countdown {
-    display: inline-flex;
-    justify-content: center;
-    margin: 3rem auto; }
-    @media (max-width: 991.98px) {
-      .home-header #home-countdown {
-        margin: 1rem auto; } }
-    .home-header #home-countdown .countdown-item {
-      padding: 16px; }
-      .home-header #home-countdown .countdown-item div:first-child {
-        font-size: 2em;
-        color: #700808;
-        font-family: 'EB Garamond', cursive; }
 
 .big-head-wrap {
   position: absolute;
@@ -6133,7 +6124,7 @@ figure {
 .big-heading {
   margin-bottom: 1rem;
   line-height: 1em;
-  font-family: 'Pinyon Script', cursive;
+  font-family: 'Great Vibes', cursive;
   font-size: 2.5rem; }
 
 .big-heading-underline {
@@ -6221,25 +6212,32 @@ figure {
   .tline .tline-left .tline-date {
     left: 1rem; }
   .tline .tline-left .tline-arrow {
-    right: 33px; }
+    right: 40px; }
   @media (min-width: 768px) {
     .tline .tline-right {
       order: 1;
       padding-left: 70px; }
       .tline .tline-right::after {
-        content: '';
+        content: '\f004';
+        font-family: 'Font Awesome 5 Pro';
+        color: white;
+        font-weight: 900;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #700808;
-        border: 3px solid #D2D2D2;
+        border: 3px solid #DFC2C2;
         border-radius: 50%;
-        height: 20px;
-        width: 20px;
         position: absolute;
-        top: 25px;
-        left: -10px; } }
+        width: 40px;
+        height: 40px;
+        top: 16px;
+        left: -20px; } }
   .tline .tline-right .tline-date {
     right: 1rem; }
   .tline .tline-right .tline-arrow {
-    left: 33px; }
+    left: 40px; }
   .tline .tline-date {
     position: absolute;
     background: rgba(255, 255, 255, 0.9);
@@ -6271,6 +6269,37 @@ figure {
     order: 1;
     text-align: right;
     padding-right: 2rem; } }
+
+#countdown {
+  background-image: url("/static/img/tiled.png"); }
+  #countdown #home-countdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem auto; }
+    @media (max-width: 991.98px) {
+      #countdown #home-countdown {
+        margin: 1rem auto; } }
+    #countdown #home-countdown .countdown-item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 120px;
+      background-color: white;
+      border-radius: 6px;
+      margin: 1rem;
+      border: 2px solid #D2D2D2;
+      padding-bottom: 1rem; }
+      #countdown #home-countdown .countdown-item div:first-child {
+        font-size: 3rem;
+        color: #700808;
+        font-family: 'EB Garamond', cursive; }
+      #countdown #home-countdown .countdown-item div:last-child {
+        font-family: 'Dosis';
+        text-transform: uppercase; }
+
+#event {
+  padding-bottom: 0; }
 
 #ceremony h3 {
   color: #700808; }
@@ -6315,5 +6344,46 @@ figure {
     margin-bottom: 1rem; }
   .registry-item h2 {
     margin-bottom: 2rem; }
+
+@media (min-width: 576px) {
+  .party-holder:first-child {
+    padding-right: 3rem; }
+  .party-holder:last-child {
+    padding-left: 3rem; } }
+
+.party {
+  margin-top: 1rem;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+  transition-duration: 0.25s; }
+  .party .party-img {
+    overflow: hidden; }
+    @media (min-width: 992px) {
+      .party .party-img {
+        height: 180px; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .party .party-img {
+        height: 120px; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .party .party-img {
+        height: 180px; } }
+    @media (max-width: 575.98px) {
+      .party .party-img {
+        height: 256px; } }
+    .party .party-img img {
+      width: 100%;
+      transition-duration: 0.5s;
+      transform: scale(1.2); }
+      .party .party-img img:hover {
+        transform: rotate(8deg) scale(1.4); }
+  .party .party-content {
+    padding: 8px; }
+    .party .party-content p {
+      margin: 0; }
+  .party:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5); }
+
+.top-margin {
+  margin-top: 2rem; }
 
 /*# sourceMappingURL=app.css.map */
