@@ -8,9 +8,12 @@ from django.core.validators import RegexValidator, MaxValueValidator, MinValueVa
 class RSVP(models.Model):
     name = models.CharField(max_length=256)
     email = models.EmailField()
-    confirmed = models.BooleanField(default=False)
     number = models.IntegerField(default=1)
     message = models.TextField(max_length=1024)
+    attending = models.CharField(max_length=256, default='Yes')
+
+    def __str__(self):
+        return '{} ({}): {}'.format(self.name, self.email, self.number)
 
 
 class Profile(models.Model):

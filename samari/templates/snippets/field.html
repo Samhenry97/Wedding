@@ -1,0 +1,15 @@
+{% if 'textarea' in field.field.widget.template_name %}
+  <textarea rows='5'
+            placeholder='{{ field.help_text }}'
+            id='{{ field.id_for_label }}'
+            name='{{ field.name }}'
+            {% if field.errors %} class='error' {% endif %}>{% if field.value %}{{ field.value }}{% endif %}</textarea>
+{% else %}
+  <input type='{% if field.field.widget.input_type == 'number' %}text{% else %}{{ field.field.widget.input_type }}{% endif %}'
+         placeholder='{{ field.help_text }}'
+         id='{{ field.id_for_label }}'
+         name='{{ field.name }}'
+         {% if field.value %} value='{{ field.value }}' {% endif %}
+         {% if field.errors %} class='error' {% endif %} />
+{% endif %}
+{{ field.errors }}

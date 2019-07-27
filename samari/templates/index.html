@@ -23,10 +23,10 @@
         <h1><span class="text-primary">A</span>rianna &amp; <span class="text-primary">S</span>amuel</h1>
         <h2>We're Getting Married!</h2>
         <h4>January 4, 2020</h4>
-        <h1 class="animated infinite fadeOutDown"><a href="#about"><i class="fa fa-angle-down"></i></a></h1>
       </div>
     </div>
   </div>
+  <a class="down" href="#about"><h1 class="animated infinite fadeOutDown"><i class="fa fa-angle-down"></i></h1></a>
 </div>
 
 <section id="about">
@@ -234,6 +234,21 @@
           <div class="tline-arrow"><i class="fa fa-chevron-left"></i></div>
           <h4 class="tline-title font-weight-light">Wedding</h4>
           <p>We can't wait to be married!</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="tline-left col-sm-12 col-md-6 text-center">
+          <div class="tline-img aos-init aos-animate" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-out-cubic">
+            <a data-fancybox="story" href="{% static 'img/engaged.jpeg' %}">
+              <img src="{% static 'img/engaged.jpeg' %}"/>
+            </a>
+          </div>
+        </div>
+        <div class="tline-right col-sm-12 col-md-6 text-left date-circle margin-b-2">
+          <div class="tline-arrow"><i class="fa fa-chevron-right"></i></div>
+          <h4 class="tline-title font-weight-light">Future Plans</h4>
+          <p>We plan on being married.</p>
         </div>
       </div>
     </div>
@@ -513,6 +528,43 @@
   </div>
 </section>
 
+<section id="rsvp" class="image-background">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h2 class="big-heading">RSVP</h2>
+        <p class="sub-heading col-lg-8 offset-lg-2 margin-b-5">Join us for our special day!</p>
+      </div>
+    </div>
+    <form method="post">
+      {% csrf_token %}
+
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          {% include 'snippets/field.html' with field=form.name %}
+        </div>
+        <div class="col-sm-12 col-md-6">
+          {% include 'snippets/field.html' with field=form.email %}
+        </div>
+        <div class="col-sm-12 col-md-6">
+          {% include 'snippets/field.html' with field=form.number %}
+        </div>
+        <div class="col-sm-12 col-md-6">
+          {{ form.attending }}
+        </div>
+        <div class="col-sm-12">
+          {% include 'snippets/field.html' with field=form.message %}
+        </div>
+        <div class="col-sm-12">
+          <center><button type="submit" class="btn btn-primary">Okay</button></center>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<a id="scroll" href="#rsvp"></a>
+
 <script>
 new Countdown({
   selector: '#home-countdown',
@@ -520,5 +572,11 @@ new Countdown({
   msgPattern: '<div class="countdown-item"><div>{days}</div><div>Days</div></div> <div class="countdown-item"><div>{hours}</div><div>Hours</div></div> <div class="countdown-item"><div>{minutes}</div><div>Mins</div></div> <div class="countdown-item"><div>{seconds}</div><div>Secs</div></div>',
   dateEnd: new Date('Jan 4, 2020 13:00')
 });
+
+{% if scroll %}
+$(document).ready(() => {
+  $('#scroll').click();
+});
+{% endif %}
 </script>
 {% endblock %}
