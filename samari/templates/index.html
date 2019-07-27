@@ -15,7 +15,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="home-header">
+<div id="home" class="home-header">
   <div class="container">
     <div class="row">
       <div class="col text-center">
@@ -28,6 +28,47 @@
   </div>
   <a class="down" href="#about"><h1 class="animated infinite fadeOutDown"><i class="fa fa-angle-down"></i></h1></a>
 </div>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="flex col-sm-12">
+        <div class="header-icon">
+          <h1>A</h1><i class="fas fa-heart"></i><h1>S</h1>
+        </div>
+        <div class="flex" id="nav-items">
+          <div class="nav-item">
+            <a href="#home"><h3>Home</h3></a>
+          </div>
+          <div class="nav-item">
+            <a href="#about"><h3>Couple</h3></a>
+          </div>
+          <div class="nav-item">
+            <a href="#story"><h3>Story</h3></a>
+          </div>
+          <div class="nav-item">
+            <a href="#event"><h3>Event</h3></a>
+          </div>
+          <div class="nav-item">
+            <a href="#party"><h3>Party</h3></a>
+          </div>
+          <div class="nav-item">
+            <a href="#registry"><h3>Registry</h3></a>
+          </div>
+          <div class="nav-item">
+            <a href="#rsvp"><h3>RSVP</h3></a>
+          </div>
+          <div id="nav-close">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
 <section id="about">
   <div class="container">
@@ -104,7 +145,7 @@
   <div class="owl-overlay"></div>
 </section>
 
-<section>
+<section id="story">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center">
@@ -132,7 +173,7 @@
         </div>
         <div class="tline-right col-sm-12 col-md-6 text-left date-circle margin-b-2">
           <div class="tline-arrow"><i class="fa fa-chevron-right"></i></div>
-          <h4 class="tline-title font-weight-light">First met</h4>
+          <h4 class="tline-title">First met</h4>
           <p>We met at the beginning of Arianna's Sophomore year and Samuel's Junior year of college. God had been working in both of our hearts to change churches, so we both decided to try out Grace Baptist Fellowship. We carpooled with two of our closest friends, and started running into each other everywhere after that.</p>
         </div>
       </div>
@@ -152,7 +193,7 @@
         </div>
         <div class="tline-left col-sm-12 col-md-6 text-left date-circle margin-b-2">
           <div class="tline-arrow"><i class="fa fa-chevron-left"></i></div>
-          <h4 class="tline-title font-weight-light">First Date</h4>
+          <h4 class="tline-title">First Date</h4>
           <p>Our first "official" date was Artist Series at Bob Jones University. We went with the same people that we carpooled with when we first met. It was an absolute blast!</p>
         </div>
       </div>
@@ -172,7 +213,7 @@
         </div>
         <div class="tline-right col-sm-12 col-md-6 text-left date-circle margin-b-2">
           <div class="tline-arrow"><i class="fa fa-chevron-right"></i></div>
-          <h4 class="tline-title font-weight-light">Started Dating</h4>
+          <h4 class="tline-title">Started Dating</h4>
           <p>Samuel attended a wedding of a good friend in Maryland and traveled up to see Arianna the day after. On that day, we started dating. It's been a whirlwind, joy, and blessing ever since!</p>
         </div>
       </div>
@@ -192,7 +233,7 @@
         </div>
         <div class="tline-left col-sm-12 col-md-6 text-left date-circle margin-b-2">
           <div class="tline-arrow"><i class="fa fa-chevron-left"></i></div>
-          <h4 class="tline-title font-weight-light">I Love You</h4>
+          <h4 class="tline-title">I Love You</h4>
           <p>We went to New York city during spring break at college. After a full day of activity, the first "I Love You" was on top of the Empire State Building.</p>
         </div>
       </div>
@@ -212,7 +253,7 @@
         </div>
         <div class="tline-right col-sm-12 col-md-6 text-left date-circle margin-b-2">
           <div class="tline-arrow"><i class="fa fa-chevron-right"></i></div>
-          <h4 class="tline-title font-weight-light">Engaged!</h4>
+          <h4 class="tline-title">Engaged!</h4>
           <p>We went on a missions trip to Antigua in May of 2019. On the last day there, the missionaries and team leaders helped Samuel set up for the engagement. We got engaged on one of the most beautiful beaches on the island!</p>
         </div>
       </div>
@@ -232,7 +273,7 @@
         </div>
         <div class="tline-left col-sm-12 col-md-6 text-left date-circle margin-b-2">
           <div class="tline-arrow"><i class="fa fa-chevron-left"></i></div>
-          <h4 class="tline-title font-weight-light">Wedding</h4>
+          <h4 class="tline-title">Wedding</h4>
           <p>We can't wait to be married!</p>
         </div>
       </div>
@@ -247,7 +288,7 @@
         </div>
         <div class="tline-right col-sm-12 col-md-6 text-left date-circle margin-b-2">
           <div class="tline-arrow"><i class="fa fa-chevron-right"></i></div>
-          <h4 class="tline-title font-weight-light">Future Plans</h4>
+          <h4 class="tline-title">Future Plans</h4>
           <p>We plan on being married.</p>
         </div>
       </div>
@@ -315,7 +356,214 @@
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.3925455969925!2d-76.40389668473355!3d41.038544025511115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c5812ef6b2b3a7%3A0xad68c28586339922!2s3300+Ridge+Rd%2C+Bloomsburg%2C+PA+17815!5e0!3m2!1sen!2sus!4v1563244171087!5m2!1sen!2sus" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-<section>
+<section id="party">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="big-head-wrap">
+          <img class="headline-hearth" src="{% static 'img/headline-hearth.svg' %}"/>
+        </div>
+        <h2 class="big-heading">Bridal <span class="text-primary">Party</span></h2>
+        <p class="sub-heading col-lg-8 offset-lg-2 margin-b-5">We're Excited to Have These Special People!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class="top-margin text-center">Bridesmaids</h4>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic">
+            <div class="party-card">
+              <div class="party">
+                <div class="party-img">
+                  <a data-fancybox="party" href="{% static 'img/gabrielle.jpg' %}">
+                    <img src="{% static 'img/gabrielle.jpg' %}"/>
+                  </a>
+                </div>
+                <div class="party-content">
+                  <h5>Gabrielle Smith</h5>
+                  <p>Maid of Honor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
+            <div class="party-card">
+              <div class="party">
+                <div class="party-img">
+                  <a data-fancybox="party" href="{% static 'img/natalie.jpg' %}">
+                    <img src="{% static 'img/natalie.jpg' %}"/>
+                  </a>
+                </div>
+                <div class="party-content">
+                  <h5>Natalie Dunphy</h5>
+                  <p>Friend</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
+            <div class="party-card">
+              <div class="party">
+                <div class="party-img">
+                  <a data-fancybox="party" href="{% static 'img/erica.jpg' %}">
+                    <img src="{% static 'img/erica.jpg' %}"/>
+                  </a>
+                </div>
+                <div class="party-content">
+                  <h5>Erica Connors</h5>
+                  <p>Friend</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
+            <div class="party-card">
+              <div class="party">
+                <div class="party-img">
+                  <a data-fancybox="party" href="{% static 'img/lydia.jpg' %}">
+                    <img src="{% static 'img/lydia.jpg' %}"/>
+                  </a>
+                </div>
+                <div class="party-content">
+                  <h5>Lydia James</h5>
+                  <p>Friend</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
+            <div class="party-card">
+              <div class="party">
+                <div class="party-img">
+                  <a data-fancybox="party" href="{% static 'img/stephanie.jpg' %}">
+                    <img src="{% static 'img/stephanie.jpg' %}"/>
+                  </a>
+                </div>
+                <div class="party-content">
+                  <h5>Stephanie Berard</h5>
+                  <p>Friend</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
+            <div class="party-card">
+              <div class="party">
+                <div class="party-img">
+                  <a data-fancybox="party" href="{% static 'img/priscilla.jpg' %}">
+                    <img src="{% static 'img/priscilla.jpg' %}"/>
+                  </a>
+                </div>
+                <div class="party-content">
+                  <h5>Priscilla Henry</h5>
+                  <p>Sister in Law</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12">
+        <h4 class="top-margin text-center">Groomsmen</h4>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
+            <div class="party-card">
+              <div class="party">
+                <div class="party-img">
+                  <a data-fancybox="party" href="{% static 'img/brendan.jpg' %}">
+                    <img src="{% static 'img/brendan.jpg' %}"/>
+                  </a>
+                </div>
+                <div class="party-content">
+                  <h5>Brendan Cathers</h5>
+                  <p>Best Man</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
+            <div class="party-card">
+              <div class="party">
+                <div class="party-img">
+                  <a data-fancybox="party" href="{% static 'img/jonathan.jpg' %}">
+                    <img src="{% static 'img/jonathan.jpg' %}"/>
+                  </a>
+                </div>
+                <div class="party-content">
+                  <h5>Jonathan Henry</h5>
+                  <p>Brother</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
+            <div class="party-card">
+              <div class="party">
+                <div class="party-img">
+                  <a data-fancybox="party" href="{% static 'img/josiahs.jpg' %}">
+                    <img src="{% static 'img/josiahs.jpg' %}"/>
+                  </a>
+                </div>
+                <div class="party-content">
+                  <h5>Josiah Smith</h5>
+                  <p>Brother in Law</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
+            <div class="party-card">
+              <div class="party">
+                <div class="party-img">
+                  <a data-fancybox="party" href="{% static 'img/ben.jpg' %}">
+                    <img src="{% static 'img/ben.jpg' %}"/>
+                  </a>
+                </div>
+                <div class="party-content">
+                  <h5>Ben Clum</h5>
+                  <p>Friend</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
+            <div class="party-card">
+              <div class="party">
+                <div class="party-img">
+                  <a data-fancybox="party" href="{% static 'img/jacob.jpg' %}">
+                    <img src="{% static 'img/jacob.jpg' %}"/>
+                  </a>
+                </div>
+                <div class="party-content">
+                  <h5>Jacob Brazeal</h5>
+                  <p>Friend</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
+            <div class="party-card">
+              <div class="party">
+                <div class="party-img">
+                  <a data-fancybox="party" href="{% static 'img/andrew.webp' %}">
+                    <img src="{% static 'img/andrew.webp' %}"/>
+                  </a>
+                </div>
+                <div class="party-content">
+                  <h5>Andrew Miller</h5>
+                  <p>Friend</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="registry">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center">
@@ -330,198 +578,15 @@
       <div class="col-sm-12 col-md-6">
         <div class="registry-item">
           <i class="fas fa-bed"></i>
-          <h2>Bed Bath &amp; Beyond</h2>
+          <h2 class="font-secondary no-margin">Bed Bath &amp; Beyond</h2>
           <a class="button-medium btn btn-primary" href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/547706956?eventType=Wedding" target="_blank">Visit</a>
         </div>
       </div>
       <div class="col-sm-12 col-md-6">
         <div class="registry-item">
           <i class="fab fa-amazon"></i>
-          <h2>Amazon</h2>
+          <h2 class="font-secondary no-margin">Amazon</h2>
           <a class="button-medium btn btn-primary" href="https://www.amazon.com/wedding/share/ariannasamuel" target="_blank">Visit</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 text-center">
-        <div class="big-head-wrap">
-          <img class="headline-hearth" src="{% static 'img/headline-hearth.svg' %}"/>
-        </div>
-        <h2 class="big-heading">Bridal <span class="text-primary">Party</span></h2>
-        <p class="sub-heading col-lg-8 offset-lg-2 margin-b-5">We're Excited to Have These Special People!</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="party-holder col-xs-12 col-sm-6">
-        <h4 class="top-margin text-center">Bridesmaids</h4>
-        <div class="row">
-          <div class="col-sm-12 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic">
-            <div class="party">
-              <div class="party-img">
-                <a data-fancybox="party" href="{% static 'img/gabrielle.jpg' %}">
-                  <img src="{% static 'img/gabrielle.jpg' %}"/>
-                </a>
-              </div>
-              <div class="party-content">
-                <h6>Gabrielle Smith</h6>
-                <p>Maid of Honor</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
-            <div class="party">
-              <div class="party-img">
-                <a data-fancybox="party" href="{% static 'img/natalie.jpg' %}">
-                  <img src="{% static 'img/natalie.jpg' %}"/>
-                </a>
-              </div>
-              <div class="party-content">
-                <h6>Natalie Dunphy</h6>
-                <p>Friend</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
-            <div class="party">
-              <div class="party-img">
-                <a data-fancybox="party" href="{% static 'img/erica.jpg' %}">
-                  <img src="{% static 'img/erica.jpg' %}"/>
-                </a>
-              </div>
-              <div class="party-content">
-                <h6>Erica Connors</h6>
-                <p>Friend</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
-            <div class="party">
-              <div class="party-img">
-                <a data-fancybox="party" href="{% static 'img/lydia.jpg' %}">
-                  <img src="{% static 'img/lydia.jpg' %}"/>
-                </a>
-              </div>
-              <div class="party-content">
-                <h6>Lydia James</h6>
-                <p>Friend</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
-            <div class="party">
-              <div class="party-img">
-                <a data-fancybox="party" href="{% static 'img/stephanie.jpg' %}">
-                  <img src="{% static 'img/stephanie.jpg' %}"/>
-                </a>
-              </div>
-              <div class="party-content">
-                <h6>Stephanie Berard</h6>
-                <p>Friend</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
-            <div class="party">
-              <div class="party-img">
-                <a data-fancybox="party" href="{% static 'img/priscilla.jpg' %}">
-                  <img src="{% static 'img/priscilla.jpg' %}"/>
-                </a>
-              </div>
-              <div class="party-content">
-                <h6>Priscilla Henry</h6>
-                <p>Sister in Law</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="party-holder col-xs-12 col-sm-6">
-        <h4 class="top-margin text-center">Groomsmen</h4>
-        <div class="row">
-          <div class="col-sm-12 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
-            <div class="party">
-              <div class="party-img">
-                <a data-fancybox="party" href="{% static 'img/brendan.jpg' %}">
-                  <img src="{% static 'img/brendan.jpg' %}"/>
-                </a>
-              </div>
-              <div class="party-content">
-                <h6>Brendan Cathers</h6>
-                <p>Best Friend</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
-            <div class="party">
-              <div class="party-img">
-                <a data-fancybox="party" href="{% static 'img/jonathan.jpg' %}">
-                  <img src="{% static 'img/jonathan.jpg' %}"/>
-                </a>
-              </div>
-              <div class="party-content">
-                <h6>Jonathan Henry</h6>
-                <p>Brother</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
-            <div class="party">
-              <div class="party-img">
-                <a data-fancybox="party" href="{% static 'img/josiahs.jpg' %}">
-                  <img src="{% static 'img/josiahs.jpg' %}"/>
-                </a>
-              </div>
-              <div class="party-content">
-                <h6>Josiah Smith</h6>
-                <p>Brother in Law</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
-            <div class="party">
-              <div class="party-img">
-                <a data-fancybox="party" href="{% static 'img/ben.jpg' %}">
-                  <img src="{% static 'img/ben.jpg' %}"/>
-                </a>
-              </div>
-              <div class="party-content">
-                <h6>Ben Clum</h6>
-                <p>Friend</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
-            <div class="party">
-              <div class="party-img">
-                <a data-fancybox="party" href="{% static 'img/jacob.jpg' %}">
-                  <img src="{% static 'img/jacob.jpg' %}"/>
-                </a>
-              </div>
-              <div class="party-content">
-                <h6>Jacob Brazeal</h6>
-                <p>Friend</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"">
-            <div class="party">
-              <div class="party-img">
-                <a data-fancybox="party" href="{% static 'img/andrew.webp' %}">
-                  <img src="{% static 'img/andrew.webp' %}"/>
-                </a>
-              </div>
-              <div class="party-content">
-                <h6>Andrew Miller</h6>
-                <p>Friend</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -556,12 +621,16 @@
           {% include 'snippets/field.html' with field=form.message %}
         </div>
         <div class="col-sm-12">
-          <center><button type="submit" class="btn btn-primary">Okay</button></center>
+          <center><button type="submit" class="btn btn-primary">Submit</button></center>
         </div>
       </div>
     </form>
   </div>
 </section>
+
+<footer>
+  <p>&copy; Samuel Henry {% now "Y" %}</p>
+</footer>
 
 <a id="scroll" href="#rsvp"></a>
 
