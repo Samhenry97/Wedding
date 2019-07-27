@@ -26,10 +26,10 @@ $(document).ready(function() {
 
   // Mobile Menu
   $('#hamburger').click(function(event) {
-    $('#nav-items').addClass('slide-in');
+    $('#nav-items-mobile').addClass('slide-in');
   });
-  $('#nav-items').click(function(event) {
-    $('#nav-items').removeClass('slide-in');
+  $('#nav-items-mobile').click(function(event) {
+    $('#nav-items-mobile').removeClass('slide-in');
   });
 });
 
