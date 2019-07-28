@@ -6115,9 +6115,14 @@ figure {
     text-decoration: none; }
 
 .home-header {
-  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   align-items: center; }
+  @media (min-width: 768px) {
+    .home-header {
+      height: 100vh; } }
+  @media (max-width: 767.98px) {
+    .home-header {
+      height: calc(var(--vh, 1vh) * 100); } }
   .home-header::before {
     content: '';
     position: absolute;

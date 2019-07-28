@@ -31,22 +31,24 @@ $(document).ready(function() {
   $('#nav-items-mobile').click(function(event) {
     $('#nav-items-mobile').removeClass('slide-in');
   });
-});
-
-// Calculate the header's sticky position
-window.onload = window.onresize = function() {
-  sticky = $('#home')[0].getBoundingClientRect().bottom + window.scrollY;
 
   // Custom viewport pixels to support mobile
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
-}
+
+  // Calculate the header's sticky position
+  sticky = $('#home')[0].getBoundingClientRect().bottom + window.scrollY;
+});
+
+window.addEventListener('resize', function() {
+  sticky = $('#home')[0].getBoundingClientRect().bottom + window.scrollY;
+});
 
 // Determind if sticky header should stick
-window.onscroll = function() {
+window.addEventListener('scroll', function() {
   if(window.scrollY > sticky) {
     $('header').addClass('sticky');
   } else {
     $('header').removeClass('sticky');
   }
-}
+});
