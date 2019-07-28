@@ -1,4 +1,4 @@
-var sticky = null;
+let sticky = null;
 
 $(document).ready(function() {
   // Owl Carousel for Quotes
@@ -36,6 +36,10 @@ $(document).ready(function() {
 // Calculate the header's sticky position
 window.onload = window.onresize = function() {
   sticky = $('#home')[0].getBoundingClientRect().bottom + window.scrollY;
+
+  // Custom viewport pixels to support mobile
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 
 // Determind if sticky header should stick
