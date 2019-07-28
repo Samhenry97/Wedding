@@ -608,6 +608,76 @@ header {
   }
 }
 
+#photos {
+  background-image: url('/static/img/tiled.png');
+
+  .ui-tabs-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+    li {
+      text-align: center;
+      width: 120px;
+      background-color: white;
+      transition-duration: 0.3s;
+
+      &:hover {
+        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.8);
+        background-color: theme-color('light');
+      }
+
+      &.ui-tabs-active {
+        background-color: theme-color('primary');
+        a { color: white; }
+      }
+
+      &:not(:last-child) { border-right: 1px solid theme-color('light'); }
+      &:first-child {
+        border-top-left-radius: 0.3rem;
+        border-bottom-left-radius: 0.3rem;
+      }
+      &:last-child {
+        border-top-right-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
+      }
+
+      a {
+        padding: 8px;
+        display: block;
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+  .gallery-holder {
+    margin-top: 2rem;
+    display: block;
+    overflow: hidden;
+    height: 256px;
+    border-radius: 0.3rem;
+    transition-duration: 0.3s;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+
+    &:hover {
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    img {
+      object-fit: cover;
+      height: 256px;
+      width: 100%;
+      transition-duration: 0.5s;
+
+      &:hover {
+        transform: rotate(8deg) scale(1.2);
+      }
+    }
+  }
+}
+
 #rsvp {
   background: url('/static/img/rsvp.jpeg') no-repeat fixed center center / cover;
 

@@ -12,6 +12,7 @@ $(document).ready(function() {
 
   // Smooth Scroll
   $('a[href*="#"]').on('click', function(event) {
+    if(this.getAttribute('href').startsWith('#gallery')) return;
     event.preventDefault();
 
     $('html, body').animate(
@@ -38,6 +39,9 @@ $(document).ready(function() {
 
   // Calculate the header's sticky position
   sticky = $('#home')[0].getBoundingClientRect().bottom + window.scrollY;
+
+  // Make tabs work
+  $('#gallery-tabs').tabs();
 });
 
 window.addEventListener('resize', function() {

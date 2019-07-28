@@ -6549,6 +6549,56 @@ header {
     background-color: #e0e0e0;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5); }
 
+#photos {
+  background-image: url("/static/img/tiled.png"); }
+  #photos .ui-tabs-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0; }
+    #photos .ui-tabs-nav li {
+      text-align: center;
+      width: 120px;
+      background-color: white;
+      transition-duration: 0.3s; }
+      #photos .ui-tabs-nav li:hover {
+        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.8);
+        background-color: #D2D2D2; }
+      #photos .ui-tabs-nav li.ui-tabs-active {
+        background-color: #700808; }
+        #photos .ui-tabs-nav li.ui-tabs-active a {
+          color: white; }
+      #photos .ui-tabs-nav li:not(:last-child) {
+        border-right: 1px solid #D2D2D2; }
+      #photos .ui-tabs-nav li:first-child {
+        border-top-left-radius: 0.3rem;
+        border-bottom-left-radius: 0.3rem; }
+      #photos .ui-tabs-nav li:last-child {
+        border-top-right-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem; }
+      #photos .ui-tabs-nav li a {
+        padding: 8px;
+        display: block;
+        text-decoration: none;
+        color: black; }
+  #photos .gallery-holder {
+    margin-top: 2rem;
+    display: block;
+    overflow: hidden;
+    height: 256px;
+    border-radius: 0.3rem;
+    transition-duration: 0.3s;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5); }
+    #photos .gallery-holder:hover {
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5); }
+    #photos .gallery-holder img {
+      object-fit: cover;
+      height: 256px;
+      width: 100%;
+      transition-duration: 0.5s; }
+      #photos .gallery-holder img:hover {
+        transform: rotate(8deg) scale(1.2); }
+
 #rsvp {
   background: url("/static/img/rsvp.jpeg") no-repeat fixed center center/cover; }
   #rsvp .sub-heading {
