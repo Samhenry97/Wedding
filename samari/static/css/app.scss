@@ -108,10 +108,13 @@ figure {
   .down {
     position: absolute;
     text-align: center;
-    bottom: 100px;
     left: 0;
     right: 0;
     margin: 0 auto;
+
+    @include media-breakpoint-up(md) { bottom: 100px; }
+    @include media-breakpoint-only(xs) { bottom: 50px; }
+    @include media-breakpoint-only(sm) { bottom: 50px; }
   }
 
   .hearth-center {
@@ -560,13 +563,20 @@ header {
   }
 }
 
+#party {
+  h3 {
+    font-size: 2rem;
+    margin: 2rem auto;
+  }
+}
+
 .party-card {
   position: relative;
   width: 100%;
   @include media-breakpoint-up(lg) { padding-top: 110%; }
   @include media-breakpoint-only(md) { padding-top: 115%; }
   @include media-breakpoint-only(sm) { padding-top: 110%; }
-  @include media-breakpoint-only(xs) { padding-top: 100%; }
+  @include media-breakpoint-only(xs) { padding-top: 110%; }
 }
 
 .party {
@@ -575,7 +585,7 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
   transition-duration: 0.25s;
   text-align: center;
   border-radius: 50%;

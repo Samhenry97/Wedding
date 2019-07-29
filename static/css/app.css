@@ -6140,10 +6140,18 @@ figure {
   .home-header .down {
     position: absolute;
     text-align: center;
-    bottom: 100px;
     left: 0;
     right: 0;
     margin: 0 auto; }
+    @media (min-width: 768px) {
+      .home-header .down {
+        bottom: 100px; } }
+    @media (max-width: 575.98px) {
+      .home-header .down {
+        bottom: 50px; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .home-header .down {
+        bottom: 50px; } }
   .home-header .hearth-center {
     position: absolute;
     left: 0;
@@ -6500,6 +6508,10 @@ header {
     color: #D2D2D2;
     margin-bottom: 1rem; }
 
+#party h3 {
+  font-size: 2rem;
+  margin: 2rem auto; }
+
 .party-card {
   position: relative;
   width: 100%; }
@@ -6514,7 +6526,7 @@ header {
       padding-top: 110%; } }
   @media (max-width: 575.98px) {
     .party-card {
-      padding-top: 100%; } }
+      padding-top: 110%; } }
 
 .party {
   position: absolute;
@@ -6522,7 +6534,7 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
   transition-duration: 0.25s;
   text-align: center;
   border-radius: 50%;

@@ -2,7 +2,8 @@ let sticky = null;
 
 $(document).ready(function() {
   // Owl Carousel for Quotes
-  $('.owl-carousel').owlCarousel({
+  $carousel = $('.owl-carousel');
+  if($carousel.length) $carousel.owlCarousel({
     items: 1,
     loop: true,
     center: true,
@@ -12,6 +13,7 @@ $(document).ready(function() {
 
   // Smooth Scroll
   $('a[href*="#"]').on('click', function(event) {
+    if(!this.getAttribute('href').startsWith('#')) return;
     if(this.getAttribute('href').startsWith('#gallery')) return;
     event.preventDefault();
 
@@ -50,7 +52,7 @@ window.addEventListener('resize', function() {
 
 // Determind if sticky header should stick
 window.addEventListener('scroll', function() {
-  if(window.scrollY > sticky) {
+  if(window.scrollY >= sticky) {
     $('header').addClass('sticky');
   } else {
     $('header').removeClass('sticky');
