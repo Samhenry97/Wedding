@@ -597,6 +597,7 @@ header {
   .party-img {
     flex-grow: 1;
     overflow: hidden;
+    height: 100%;
     img {
       width: 100%;
       transition-duration: 0.5s;
@@ -677,6 +678,7 @@ header {
 
     img {
       object-fit: cover;
+      object-position: top;
       height: 256px;
       width: 100%;
       transition-duration: 0.5s;

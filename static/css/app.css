@@ -6544,7 +6544,8 @@ header {
   flex-direction: column; }
   .party .party-img {
     flex-grow: 1;
-    overflow: hidden; }
+    overflow: hidden;
+    height: 100%; }
     .party .party-img img {
       width: 100%;
       transition-duration: 0.5s;
@@ -6605,6 +6606,7 @@ header {
       box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5); }
     #photos .gallery-holder img {
       object-fit: cover;
+      object-position: top;
       height: 256px;
       width: 100%;
       transition-duration: 0.5s; }

@@ -6,6 +6,8 @@ def index(request):
         form = RSVPForm(request.POST)
         if form.is_valid():
             rsvp = form.save()
+        else:
+            return render(request, 'rsvp.html', {'form': form})
     else:
         form = RSVPForm()
 
