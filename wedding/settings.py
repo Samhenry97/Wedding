@@ -128,5 +128,7 @@ SASS_PROCESSOR_ROOT = STATIC_URL[1:]
 
 LOGIN_REDIRECT_URL = '/'
 
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
 # Set up Heroku if it's running
 django_heroku.settings(locals())

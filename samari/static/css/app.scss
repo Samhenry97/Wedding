@@ -6,6 +6,7 @@ $theme-colors: (
   'light': #D2D2D2,
   'dark': #2D2C35
 );
+
 @import 'bootstrap/bootstrap';
 
 h1 {
@@ -78,6 +79,41 @@ figure {
 
   &:hover {
     text-decoration: none;
+  }
+}
+
+.messages {
+  position: fixed;
+  z-index: 300;
+  list-style: none;
+  width: 100%;
+  top: 0;
+  padding: 16px 10%;
+  margin: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 16px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.25);
+
+    &.success { background-color: theme-color-level('success'); }
+    &.warning { background-color: theme-color-level('danger'); }
+
+    p {
+      margin: 0;
+      flex-grow: 1;
+    }
+
+    i {
+      padding: 4px;
+      cursor: pointer;
+    }
   }
 }
 
@@ -712,7 +748,11 @@ textarea {
 }
 
 .errorlist {
-  background-color: rgba(255, 0, 0, 0.6);
+  margin: 0;
+  padding: 4px 8px;
+  list-style: none;
+  color: black;
+  background-color: theme-color-level('danger');
 }
 
 .btn {
@@ -725,7 +765,27 @@ textarea {
   p { color: white; }
 }
 
+.fancybox-caption {
+  background: #CCC;
+  color: black;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.0rem;
+  box-shadow: 0 -20px 30px 0 rgba(0, 0, 0, 0.75);
+  max-height: 200px;
+  overflow-y: auto;
+
+  @include media-breakpoint-up(lg) { padding: 20px 20%; }
+  @include media-breakpoint-only(md) { padding: 20px 10%; }
+  @include media-breakpoint-down(sm) { padding: 20px 8px; }
+
+
+  h2 {
+    color: theme-color('primary');
+  }
+}
+
 footer {
+  background: none;
   background-color: theme-color('dark');
   color: theme-color('light');
   display: flex;

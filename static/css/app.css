@@ -6114,6 +6114,35 @@ figure {
   .clear-link:hover {
     text-decoration: none; }
 
+.messages {
+  position: fixed;
+  z-index: 300;
+  list-style: none;
+  width: 100%;
+  top: 0;
+  padding: 16px 10%;
+  margin: 0; }
+  .messages li {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 16px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.25); }
+    .messages li.success {
+      background-color: #28a745; }
+    .messages li.warning {
+      background-color: #dc3545; }
+    .messages li p {
+      margin: 0;
+      flex-grow: 1; }
+    .messages li i {
+      padding: 4px;
+      cursor: pointer; }
+
 .home-header {
   display: flex;
   align-items: center; }
@@ -6630,7 +6659,11 @@ textarea {
   margin-top: 2rem; }
 
 .errorlist {
-  background-color: rgba(255, 0, 0, 0.6); }
+  margin: 0;
+  padding: 4px 8px;
+  list-style: none;
+  color: black;
+  background-color: #dc3545; }
 
 .btn {
   border-radius: 0;
@@ -6641,7 +6674,28 @@ textarea {
   .image-background p {
     color: white; }
 
+.fancybox-caption {
+  background: #CCC;
+  color: black;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.0rem;
+  box-shadow: 0 -20px 30px 0 rgba(0, 0, 0, 0.75);
+  max-height: 200px;
+  overflow-y: auto; }
+  @media (min-width: 992px) {
+    .fancybox-caption {
+      padding: 20px 20%; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .fancybox-caption {
+      padding: 20px 10%; } }
+  @media (max-width: 767.98px) {
+    .fancybox-caption {
+      padding: 20px 8px; } }
+  .fancybox-caption h2 {
+    color: #700808; }
+
 footer {
+  background: none;
   background-color: #2D2C35;
   color: #D2D2D2;
   display: flex;

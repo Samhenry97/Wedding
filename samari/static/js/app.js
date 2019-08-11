@@ -44,6 +44,12 @@ $(document).ready(function() {
 
   // Make tabs work
   $('#gallery-tabs').tabs();
+
+  // Make the messages behave correctly
+  $('.messages').delay(8000).fadeOut(1000);
+  $('.close-message').click(function(event) {
+    $(this).parent().fadeOut(500);
+  });
 });
 
 window.addEventListener('resize', function() {

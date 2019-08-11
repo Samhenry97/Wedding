@@ -108,7 +108,7 @@
           <img class="headline-hearth" src="{% static 'img/headline-hearth.svg' %}"/>
         </div>
         <h2 class="big-heading">About <span class="text-primary">Us</span></h2>
-        <p class="sub-heading col-lg-8 offset-lg-2 margin-b-5">Some random information.</p>
+        <p class="sub-heading col-lg-8 offset-lg-2 margin-b-5">Some tidbits about us</p>
       </div>
     </div>
     <div class="row">
@@ -118,9 +118,9 @@
             <img class="img-fluid rounded-circle aos-init aos-animate" src="{% static 'img/ari.jpg' %}" data-aos="fade-right" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"/>
           </a>
         </figure>
-        <div class="about-content col-sm-8 offset-sm-2">
+        <div class="about-content col-sm-10 offset-sm-1">
           <h4>Arianna Victoria Smith <span class="text-primary">Bride</span></h4>
-          <p>Some information about Arianna</p>
+          <p>Arianna was born to Tim and Lisa Smith on June 2, 1997. She grew up in Bloomsburg, Pennsylvania and attended Calvary Baptist Church, where her father serves as the senior pastor. She currently is a senior English major at Bob Jones University and will be graduating with her Bachelor's degree in December. Some of her favorite things are coffee, books, fuzzy blankets, cheesy Hallmark movies, and long talks with good friends.</p>
           <ul class="social-link">
             <li class="d-inline-block aos-init aos-animate" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200" data-aos-offset="200">
               <a target="_blank" href="https://www.facebook.com/asmithofmany"><i class="fab fa-facebook-f"></i></a>
@@ -137,9 +137,9 @@
             <img class="img-fluid rounded-circle aos-init aos-animate" src="{% static 'img/sam.jpg' %}" data-aos="fade-left" data-aos-offset="300" data-aos-easin="ease-in-out-cubic"/>
           </a>
         </figure>
-        <div class="about-content col-sm-8 offset-sm-2">
+        <div class="about-content col-sm-10 offset-sm-1">
           <h4>Samuel Edward Henry <span class="text-primary">Groom</span></h4>
-          <p>Some information about Samuel</p>
+          <p>Samuel was born to Andrew and Heather Henry on June 4, 1997 in Jacksonville, Florida. He grew up in McDonough, Georgia and attended Bible Baptist Church. Sam graduated in May 2019 with his Bachelor's in Computer Science. He currently works as a software developer for Follett School Solutions, a company based in Illinois that creates software for schools. Some of his favorite things are running, playing piano, programming, and nerdy or good talks with friends.</p>
           <ul class="social-link">
             <li class="d-inline-block aos-init aos-animate" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200" data-aos-offset="200">
               <a target="_blank" href="https://www.facebook.com/samuel.henry.97"><i class="fab fa-facebook-f"></i></a>
@@ -311,7 +311,7 @@
       <div class="row">
         <div class="tline-left col-sm-12 col-md-6 text-center">
           <div class="tline-img aos-init aos-animate" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-out-cubic">
-            <a data-fancybox="story" href="{% static 'img/engaged.jpeg' %}">
+            <a data-fancybox="story" href="{% static 'img/timeline/engaged.jpeg' %}">
               <img src="{% static 'img/timeline/engaged.jpeg' %}"/>
             </a>
           </div>
@@ -407,7 +407,7 @@
             <div class="party-card">
               <div class="party">
                 <div class="party-img">
-                  <a data-fancybox="bridal-party" href="{% static 'img/party/gabrielle.jpg' %}">
+                  <a data-fancybox="bridal-party" data-caption="<h2>Gabrielle Smith</h2>Gabrielle and I are not only sisters but also best friends. We enjoy spending time doing basically anything together. Gabrielle has an excellent sense of humor and keeps me smiling and laughing constantly. I couldn't ask for a better sister." title="Arianna's Seester" href="{% static 'img/party/gabrielle.jpg' %}">
                     <img src="{% static 'img/party/gabrielle.jpg' %}"/>
                   </a>
                 </div>
@@ -422,7 +422,7 @@
             <div class="party-card">
               <div class="party">
                 <div class="party-img">
-                  <a data-fancybox="bridal-party" href="{% static 'img/party/natalie.jpg' %}">
+                  <a data-fancybox="bridal-party" data-caption="<h2>Natalie Dunphy</h2>Natalie and I met at CIT at the Wilds of New England, but became close friends during College Algebra in freshman year at Bob Jones. Natalie's friendship has been a major part of my growth at college, and I cannot imagine the past couple of years without her support." href="{% static 'img/party/natalie.jpg' %}">
                     <img src="{% static 'img/party/natalie.jpg' %}"/>
                   </a>
                 </div>
@@ -437,7 +437,7 @@
             <div class="party-card">
               <div class="party">
                 <div class="party-img">
-                  <a data-fancybox="bridal-party" href="{% static 'img/party/erica.jpg' %}">
+                  <a data-fancybox="bridal-party" data-caption="<h2>Erica Connors</h2>Erica and I met at an all state choir in PA. We reconnected at college and became fast friends! Erica challenges me to be a better student, a deeper thinker, a more thoughtful friend, and a more humble servant of God.  Anytime we get together, we spend hours talking about basically anything you can think of!" href="{% static 'img/party/erica.jpg' %}">
                     <img src="{% static 'img/party/erica.jpg' %}"/>
                   </a>
                 </div>
@@ -452,7 +452,7 @@
             <div class="party-card">
               <div class="party">
                 <div class="party-img">
-                  <a data-fancybox="bridal-party" href="{% static 'img/party/lydia.jpg' %}">
+                  <a data-fancybox="bridal-party" data-caption="<h2>Lydia James</h2>Lydia and I met our senior year during an all state choir. I knew immediately that I wanted to be friends with her! Lydia has a contagious love for life and adventure that has made my time at college continually interesting and fun. I am so thankful for her positive and encouraging spirit and her desire to serve the Lord." href="{% static 'img/party/lydia.jpg' %}">
                     <img src="{% static 'img/party/lydia.jpg' %}"/>
                   </a>
                 </div>
@@ -467,7 +467,7 @@
             <div class="party-card">
               <div class="party">
                 <div class="party-img">
-                  <a data-fancybox="bridal-party" href="{% static 'img/party/stephanie.jpg' %}">
+                  <a data-fancybox="bridal-party" data-caption="<h2>Stephanie Berard</h2>Steph and I met because throughout freshman year everyone kept thinking we were the other person. We then formed a close friendship working at the Wilds of New England together. We would end up spending the weekends together having long, edifying conversations. Steph has a wisdom beyond her years that is so encouraging to me." href="{% static 'img/party/stephanie.jpg' %}">
                     <img src="{% static 'img/party/stephanie.jpg' %}"/>
                   </a>
                 </div>
@@ -482,7 +482,7 @@
             <div class="party-card">
               <div class="party">
                 <div class="party-img">
-                  <a data-fancybox="bridal-party" href="{% static 'img/party/priscilla.jpg' %}">
+                  <a data-fancybox="bridal-party" data-caption="<h2>Priscilla Henry</h2>Priscilla is Sam's younger sister. I had the opportunity to know her better this past year in our Discipleship Group. Priscilla is a loyal and loving to the friends in her life. Sam and Priscilla share sense of humor and a love for puns that is almost none syop when they are together. She is creative and desires to use her talents to serve the Lord. We are excited to share our special day with her!" href="{% static 'img/party/priscilla.jpg' %}">
                     <img src="{% static 'img/party/priscilla.jpg' %}"/>
                   </a>
                 </div>
@@ -503,7 +503,7 @@
             <div class="party-card">
               <div class="party">
                 <div class="party-img">
-                  <a data-fancybox="bridal-party" href="{% static 'img/party/brendan.jpg' %}">
+                  <a data-fancybox="bridal-party" data-caption="<h2>Brendan Cathers</h2>Brendan and I met through freshman choir, and we were in the same dorm during our freshman year of college. He is always ready to have deep spiritual conversations, but he also loves having fun with those around him. We have now been roommates during both our senior year and for a few months before he got married! Brendan is one of the Godliest guys I have known, and I'm thankful he's also one of my closest friends!" href="{% static 'img/party/brendan.jpg' %}">
                     <img src="{% static 'img/party/brendan.jpg' %}"/>
                   </a>
                 </div>
@@ -518,7 +518,7 @@
             <div class="party-card">
               <div class="party">
                 <div class="party-img">
-                  <a data-fancybox="bridal-party" href="{% static 'img/party/jonathan.jpg' %}">
+                  <a data-fancybox="bridal-party" data-caption="<h2>Jonathan Henry</h2>Jonathan is my little brother. He has a very creative mind, and he loves things like legos and games. We have enjoyed growing up together, from building spaceships and buildings, to playing games, to just hanging out. Recently, he has become interested in astronomy, and he is considering pursuing that in the future. I'm thankful to have him as part of the wedding!" href="{% static 'img/party/jonathan.jpg' %}">
                     <img src="{% static 'img/party/jonathan.jpg' %}"/>
                   </a>
                 </div>
@@ -533,7 +533,7 @@
             <div class="party-card">
               <div class="party">
                 <div class="party-img">
-                  <a data-fancybox="bridal-party" href="{% static 'img/party/josiahs.jpg' %}">
+                  <a data-fancybox="bridal-party" data-caption="<h2>Josiah Smith</h2>Josiah is Arianna's younger brother, and also one of my closest friends. We first met when he came down for college up close a few months after Arianna and I met. Ever since then, I have enjoyed our conversations, hanging out together, and learning together. He is a very deep thinker - one of the smartest people I have met. He is also very motivated in everything he does. I'm excited to become his brother-in-law!" href="{% static 'img/party/josiahs.jpg' %}">
                     <img src="{% static 'img/party/josiahs.jpg' %}"/>
                   </a>
                 </div>
@@ -548,7 +548,7 @@
             <div class="party-card">
               <div class="party">
                 <div class="party-img">
-                  <a data-fancybox="bridal-party" href="{% static 'img/party/ben.jpg' %}">
+                  <a data-fancybox="bridal-party" data-caption="<h2>Benjamin Clum</h2>Ben and I go way back! We went to the same church growing up, so we have known each other a long time. We roomed together during my freshman year of college. We are both software developers, so we get to work together every so often. Ben is always willing to have fun, and he invests in those around him. I am thankful for his friendship over the years!" href="{% static 'img/party/ben.jpg' %}">
                     <img src="{% static 'img/party/ben.jpg' %}"/>
                   </a>
                 </div>
@@ -563,7 +563,7 @@
             <div class="party-card">
               <div class="party">
                 <div class="party-img">
-                  <a data-fancybox="bridal-party" href="{% static 'img/party/jacob.jpg' %}">
+                  <a data-fancybox="bridal-party" data-caption="<h2>Jacob Brazeal</h2>Jacob and I met during our freshman year of college. He is a deep thinker, and he always loves a challenge. We have enjoyed being on programming teams with Nathan Collins over the last few years! Jacob is not only smart, but he also enjoys deep conversations. He is always willing to listen, and he has been a great friend over the years!" href="{% static 'img/party/jacob.jpg' %}">
                     <img src="{% static 'img/party/jacob.jpg' %}"/>
                   </a>
                 </div>
@@ -578,7 +578,7 @@
             <div class="party-card">
               <div class="party">
                 <div class="party-img">
-                  <a data-fancybox="bridal-party" href="{% static 'img/party/andrew.jpg' %}">
+                  <a data-fancybox="bridal-party" data-caption="<h2>Andrew Miller</h2>Andrew and I met on the first day of our freshman year. Ever since then, we have been good friends. We have done a lot together over the years, and he has been there through all the changes in our lives. We were able to room together during my last semester of college. He is a hard worker, and he takes time to invest in those around him." href="{% static 'img/party/andrew.jpg' %}">
                     <img src="{% static 'img/party/andrew.jpg' %}"/>
                   </a>
                 </div>
