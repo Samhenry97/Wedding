@@ -6541,53 +6541,71 @@ header {
   font-size: 2rem;
   margin: 2rem auto; }
 
-.party-card {
+#party .party-card {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  color: black; }
   @media (min-width: 992px) {
-    .party-card {
+    #party .party-card {
       padding-top: 110%; } }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    .party-card {
+    #party .party-card {
       padding-top: 115%; } }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    .party-card {
+    #party .party-card {
       padding-top: 110%; } }
   @media (max-width: 575.98px) {
-    .party-card {
+    #party .party-card {
       padding-top: 110%; } }
-
-.party {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-bottom: 2rem;
-  transition-duration: 0.25s;
-  text-align: center;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column; }
-  .party .party-img {
-    flex-grow: 1;
+  #party .party-card .zoom {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 0;
+    opacity: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition-duration: 0.25s;
+    margin-bottom: 2rem;
+    border-radius: 50%; }
+  #party .party-card .party {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 2rem;
+    transition-duration: 0.25s;
+    text-align: center;
+    border-radius: 50%;
     overflow: hidden;
-    height: 100%; }
-    .party .party-img img {
-      width: 100%;
-      transition-duration: 0.5s;
-      transform: rotate(0deg) scale(1.2); }
-      .party .party-img img:hover {
-        transform: rotate(8deg) scale(1.4); }
-  .party .party-content {
-    padding: 8px; }
-    .party .party-content h5 {
-      margin: 0; }
-    .party .party-content p {
-      margin-bottom: 8px; }
-  .party:hover {
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column; }
+    #party .party-card .party .party-img {
+      flex-grow: 1;
+      overflow: hidden;
+      height: 100%; }
+      #party .party-card .party .party-img img {
+        width: 100%;
+        transition-duration: 0.5s;
+        transform: rotate(0deg) scale(1.2); }
+    #party .party-card .party .party-content {
+      padding: 8px; }
+      #party .party-card .party .party-content h5 {
+        margin: 0; }
+      #party .party-card .party .party-content p {
+        margin-bottom: 8px; }
+  #party .party-card:hover .zoom {
+    font-size: 64px;
+    background-color: rgba(255, 255, 255, 0.6); }
+  #party .party-card:hover .party-img img {
+    transform: rotate(8deg) scale(1.4); }
+  #party .party-card:hover .party {
     background-color: #e0e0e0;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5); }
 
@@ -6675,7 +6693,7 @@ textarea {
     color: white; }
 
 .fancybox-caption {
-  background: #CCC;
+  background: #D2D2D2;
   color: black;
   font-family: 'Muli', sans-serif;
   font-size: 1.0rem;
