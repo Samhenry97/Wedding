@@ -645,12 +645,16 @@ header {
       box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
       display: flex;
       flex-direction: column;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
 
       .party-img {
         flex-grow: 1;
         overflow: hidden;
         height: 100%;
+        background-color: green;
         img {
+          overflow: hidden;
           width: 100%;
           transition-duration: 0.5s;
           transform: rotate(0deg) scale(1.2);
@@ -733,6 +737,8 @@ header {
     border-radius: 0.3rem;
     transition-duration: 0.3s;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
 
     &:hover {
       box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
@@ -797,8 +803,6 @@ textarea {
   font-family: 'Muli', sans-serif;
   font-size: 1.0rem;
   box-shadow: 0 -20px 30px 0 rgba(0, 0, 0, 0.75);
-  max-height: 200px;
-  overflow-y: auto;
 
   @include media-breakpoint-up(lg) { padding: 20px 20%; }
   @include media-breakpoint-only(md) { padding: 20px 10%; }
