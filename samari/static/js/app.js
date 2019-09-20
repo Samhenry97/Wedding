@@ -19,8 +19,8 @@ $(document).ready(function() {
 
     $('html, body').animate(
       { scrollTop: $($(this).attr('href')).offset().top },
-      1500,
-      'easeInOutQuint'
+      1000,
+      'easeInOutCubic'
     );
   });
 
@@ -43,7 +43,7 @@ $(document).ready(function() {
   sticky = $('#home')[0].getBoundingClientRect().bottom + window.scrollY;
 
   // Make tabs work
-  $('#gallery-tabs').tabs();
+  $('#gallery-tabs').tabs({ active: 1 });
 
   // Make the messages behave correctly
   $('.messages').delay(8000).fadeOut(1000);

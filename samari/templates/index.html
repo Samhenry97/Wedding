@@ -22,7 +22,7 @@
         <div class="hearth-center"></div>
         <h1><span class="text-primary">A</span>rianna &amp; <span class="text-primary">S</span>amuel</h1>
         <h2>We're Getting Married!</h2>
-        <h4>January 4, 2020</h4>
+        <h4 style="font-weight: normal;">January 4, 2020</h4>
       </div>
     </div>
   </div>
@@ -381,6 +381,13 @@
         <p>
           We're both so excited to share our joy with you on our special day! Thank you for all your support and encouragement as we start our lives together.
         </p>
+        <h3>Accommodations</h3>
+        <p>
+          Rooms are available for discounted rates at the Hampton Inn and the Fairfield by Marriott in Bloomsburg.
+  To reserve a room at the Hampton, call 1-570-380-1020 and mention the Smith-Henry wedding or make a reservation online using the code "SHW."
+  To reserve a room at the Fairfield, call (570) 416-2777 and mention our wedding.
+  Please make your reservations by December 3, 2019.
+        </p>
       </div>
     </div>
   </div>
@@ -637,9 +644,13 @@
           </div>
 
           <div class="row" id="gallery-engagement">
-            <div class="col-sm-12">
-              <h2 class="text-center">Coming Soon!</h2>
-            </div>
+            {% for image in engage %}
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <a data-fancybox="engage" href="{% static image %}" class="gallery-holder aos-init aos-animate">
+                  <img src="{% static image %}"/>
+                </a>
+              </div>
+            {% endfor %}
           </div>
 
           <div class="row" id="gallery-wedding">

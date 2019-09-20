@@ -11,6 +11,7 @@ def index(request):
 
     context = {'form': form, 'scroll': request.method == 'POST'}
     context['dating'] = ['img/gallery/dating/{}.jpg'.format(i + 1) for i in range(12)]
+    context['engage'] = ['img/gallery/engage/{}.jpg'.format(i + 1) for i in range(24)]
 
     return render(request, 'index.html', context)
 

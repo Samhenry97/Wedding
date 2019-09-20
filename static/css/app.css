@@ -6162,7 +6162,7 @@ figure {
     background-image: url("/static/img/home-header.png");
     background-repeat: no-repeat;
     background-size: cover;
-    filter: opacity(20%) blur(2px); }
+    filter: opacity(50%) blur(1px); }
   .home-header h2 {
     font-family: 'Dosis';
     letter-spacing: 2px; }
