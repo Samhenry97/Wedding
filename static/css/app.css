@@ -6162,6 +6162,7 @@ figure {
     background-image: url("/static/img/home-header.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     filter: opacity(50%) blur(1px); }
   .home-header h2 {
     font-family: 'Dosis';
@@ -6329,6 +6330,13 @@ header {
   font-size: 1.25em;
   font-family: 'Raleway', sans-serif;
   color: #2D2C35; }
+
+#about .spouse-image {
+  border-radius: 50%;
+  transition: all 0.25s linear;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5); }
+  #about .spouse-image:hover {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5); }
 
 .social-link {
   padding: 0;
@@ -6624,7 +6632,7 @@ header {
       text-align: center;
       width: 120px;
       background-color: white;
-      transition-duration: 0.3s; }
+      transition-duration: 0.5s; }
       #photos .ui-tabs-nav li:hover {
         box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.8);
         background-color: #D2D2D2; }
@@ -6651,7 +6659,7 @@ header {
     overflow: hidden;
     height: 256px;
     border-radius: 0.3rem;
-    transition-duration: 0.3s;
+    transition-duration: 0.25s;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
     -webkit-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0); }
