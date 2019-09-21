@@ -6356,7 +6356,7 @@ header {
 
 #quotes {
   color: white;
-  background: url("/static/img/charleston.jpg") no-repeat fixed center center/cover; }
+  background: url("/static/img/quotes.jpg") no-repeat fixed center center/cover; }
 
 .owl-carousel .owl-dots .owl-dot.active span {
   background-color: #700808 !important; }
@@ -6401,7 +6401,10 @@ header {
     margin-top: 20px; }
   .tline .tline-img img {
     width: 100%;
-    border-radius: 0.3rem; }
+    height: 256px;
+    border-radius: 0.3rem;
+    object-fit: cover;
+    object-position: center 22%; }
   @media (min-width: 768px) {
     .tline .tline-left {
       order: 0;
@@ -6667,7 +6670,7 @@ header {
       box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5); }
     #photos .gallery-holder img {
       object-fit: cover;
-      object-position: top;
+      object-position: center;
       height: 256px;
       width: 100%;
       transition-duration: 0.5s; }
@@ -6675,7 +6678,7 @@ header {
         transform: rotate(8deg) scale(1.2); }
 
 #rsvp {
-  background: url("/static/img/rsvp.jpeg") no-repeat fixed center center/cover; }
+  background: url("/static/img/rsvp.jpg") no-repeat fixed center top/cover; }
   #rsvp .sub-heading {
     margin-bottom: 0; }
 
@@ -6698,8 +6701,13 @@ textarea {
   background-color: #dc3545; }
 
 .btn {
-  border-radius: 0;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.25rem;
+  box-shadow: 0 0 10px 0 white;
+  transition: all linear 0.25s; }
+  .btn:hover {
+    box-shadow: 0 0 14px 0 white; }
 
 .image-background {
   color: white; }
