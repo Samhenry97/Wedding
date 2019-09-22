@@ -1,0 +1,97 @@
+{% extends "skeleton.html" %}
+
+{% load static %}
+
+{% block title %} {{block.super}} - 500 Server Error {% endblock %}
+
+{% block content %}
+<div id="home"></div>
+
+<div class="flex" id="nav-items-mobile">
+  <div class="nav-item">
+    <a href="{% url 'home' %}#home"><h3>Home</h3></a>
+  </div>
+  <div class="nav-item">
+    <a href="{% url 'home' %}#about"><h3>Couple</h3></a>
+  </div>
+  <div class="nav-item">
+    <a href="{% url 'home' %}#story"><h3>Story</h3></a>
+  </div>
+  <div class="nav-item">
+    <a href="{% url 'home' %}#event"><h3>Event</h3></a>
+  </div>
+  <div class="nav-item">
+    <a href="{% url 'home' %}#party"><h3>Party</h3></a>
+  </div>
+  <div class="nav-item">
+    <a href="{% url 'home' %}#photos"><h3>Gallery</h3></a>
+  </div>
+  <div class="nav-item">
+    <a href="{% url 'home' %}#registry"><h3>Registry</h3></a>
+  </div>
+  <div class="nav-item">
+    <a href="#rsvp"><h3>RSVP</h3></a>
+  </div>
+  <div id="nav-close">
+    <i class="fas fa-times"></i>
+  </div>
+</div>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="flex col-sm-12">
+        <div class="header-icon">
+          <h1>A</h1><i class="fas fa-heart"></i><h1>S</h1>
+        </div>
+        <div class="flex" id="nav-items">
+          <div class="nav-item">
+            <a href="{% url 'home' %}#home"><h3>Home</h3></a>
+          </div>
+          <div class="nav-item">
+            <a href="{% url 'home' %}#about"><h3>Couple</h3></a>
+          </div>
+          <div class="nav-item">
+            <a href="{% url 'home' %}#story"><h3>Story</h3></a>
+          </div>
+          <div class="nav-item">
+            <a href="{% url 'home' %}#event"><h3>Event</h3></a>
+          </div>
+          <div class="nav-item">
+            <a href="{% url 'home' %}#party"><h3>Party</h3></a>
+          </div>
+          <div class="nav-item">
+            <a href="{% url 'home' %}#photos"><h3>Gallery</h3></a>
+          </div>
+          <div class="nav-item">
+            <a href="{% url 'home' %}#registry"><h3>Registry</h3></a>
+          </div>
+          <div class="nav-item">
+            <a href="#rsvp"><h3>RSVP</h3></a>
+          </div>
+        </div>
+        <div id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="text-center" id="countdown">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Server Error</h1>
+        <h3>Oops, we messed up!</h3>
+        <hr/>
+        <h3><a href="{% url 'home' %}">Take me Home <i class="fas fa-external-link-alt"></i></a></h3>
+      </div>
+    <div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; Samuel Henry {% now "Y" %}</p>
+</footer>
+{% endblock %}

@@ -71,30 +71,17 @@ a[x-apple-data-detectors] {
           <td align="center" style="padding:0;Margin:0;">
            <table class="es-header-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;" width="600" cellspacing="0" cellpadding="0" bgcolor="transparent" align="center">
              <tr style="border-collapse:collapse;">
-              <td style="Margin:0;padding-top:20px;padding-bottom:20px;padding-left:20px;padding-right:20px;background-position:left top;" align="left">
-               <!--[if mso]><table width="560" cellpadding="0" cellspacing="0"><tr><td width="270" valign="top"><![endif]-->
-               <table class="es-left" cellspacing="0" cellpadding="0" align="left" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left;">
+              <td style="Margin:0;padding-bottom:0;padding-top:0;padding-left:0;padding-right:0;background-position:center 40%;" align="left">
+               <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;">
                  <tr style="border-collapse:collapse;">
-                  <td class="es-m-p20b" width="270" align="left" style="padding:0;Margin:0;">
-                   <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;">
+                  <td width="560" valign="top" align="center" style="padding:0;Margin:0;">
+                   <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-position:center 40%;" width="100%" cellspacing="0" cellpadding="0">
                      <tr style="border-collapse:collapse;">
-                      <td class="es-m-txt-c" align="left" style="padding:0;Margin:0;"><img src="https://www.ariannasamuel.com/static/img/favicon.png" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;" width="70"></td>
+                      <td class="es-m-txt-c" align="center" style="padding:0;Margin:0;"><img src="https://www.ariannasamuel.com/static/img/favicon.png" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;" width="70"></td>
                      </tr>
                    </table></td>
                  </tr>
-               </table>
-               <!--[if mso]></td><td width="20"></td><td width="270" valign="top"><![endif]-->
-               <table class="es-right" cellspacing="0" cellpadding="0" align="right" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right;">
-                 <tr style="border-collapse:collapse;">
-                  <td width="270" align="left" style="padding:0;Margin:0;">
-                   <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;">
-                     <tr style="border-collapse:collapse;">
-                      <td class="es-m-txt-c" align="right" style="padding:25px;Margin:0;"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:17px;color:#333333;">{date}</p></td>
-                     </tr>
-                   </table></td>
-                 </tr>
-               </table>
-               <!--[if mso]></td></tr></table><![endif]--></td>
+               </table></td>
              </tr>
            </table></td>
          </tr>
@@ -110,13 +97,19 @@ a[x-apple-data-detectors] {
                   <td width="600" valign="top" align="center" style="padding:0;Margin:0;">
                    <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;border-left:1px solid #999999;border-right:1px solid #999999;border-top:1px solid #999999;border-bottom:1px solid #999999;background-image:url(https://www.ariannasamuel.com/static/img/tiled.png);background-position:center 40%;background-repeat:repeat;" width="100%" cellspacing="0" cellpadding="0" background="https://www.ariannasamuel.com/static/img/tiled.png">
                      <tr style="border-collapse:collapse;">
-                      <td height="100" align="center" style="padding:0;Margin:0;"></td>
+                      <td height="60" align="center" style="padding:0;Margin:0;"></td>
+                     </tr>
+                     <tr class="es-mobile-hidden" style="border-collapse:collapse;">
+                      <td height="40" align="center" style="padding:0;Margin:0;"></td>
                      </tr>
                      <tr style="border-collapse:collapse;">
                       <td bgcolor="transparent" align="center" style="padding:0;Margin:0;padding-top:5px;"><h1 style="Margin:0;line-height:58px;mso-line-height-rule:exactly;font-family:'lucida sans unicode', 'lucida grande', sans-serif;font-size:48px;font-style:normal;font-weight:bold;color:#700808;">Thank You!<br></h1></td>
                      </tr>
+                     <tr class="es-mobile-hidden" style="border-collapse:collapse;">
+                      <td height="40" align="center" style="padding:0;Margin:0;"></td>
+                     </tr>
                      <tr style="border-collapse:collapse;">
-                      <td height="100" align="center" style="padding:0;Margin:0;"></td>
+                      <td height="60" align="center" style="padding:0;Margin:0;"></td>
                      </tr>
                    </table></td>
                  </tr>
@@ -132,7 +125,7 @@ a[x-apple-data-detectors] {
                       <td class="es-m-txt-l" align="center" style="padding:0;Margin:0;padding-bottom:10px;"><h3 style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;font-size:20px;font-style:normal;font-weight:bold;color:#040404;">Dear {name},</h3></td>
                      </tr>
                      <tr style="border-collapse:collapse;">
-                      <td class="es-m-txt-l" align="left" style="padding:0;Margin:0;padding-bottom:10px;">Thank you for letting us know what your plans are for our wedding! {message} Don't hesitate to reach out to either of us if you have any questions.<br></td>
+                      <td class="es-m-txt-l" align="left" style="padding:0;Margin:0;padding-bottom:10px;"> Thank you for letting us know what your plans are for our wedding! {message} Don't hesitate to reach out to either of us if you have any questions.<br></td>
                      </tr>
                    </table></td>
                  </tr>
