@@ -1,7 +1,11 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import RSVPForm
+from django.core.mail import send_mail
 import telepot
+from .email_template import rsvp_confirmation, telegram_confirmation, get_message
+from datetime import datetime
+import os
 
 def index(request):
     if request.method == 'POST':
@@ -23,14 +27,19 @@ def rsvp(request):
             del request.session['form']
         if form.is_valid():
             data = form.cleaned_data
-            sendTelegram('''\
-<<<NEW RSVP>>>
-Name: {} ({})
-Guests: {}
-Response: {}
-Message: {}'''.format(data['name'], data['email'], data['number'], attending[data['attending']], data['message']))
+            html = rsvp_confirmation \
+                  .replace('{date}', datetime.now().strftime('%b %d, %Y')) \
+                  .replace('{name}', data['name']) \
+                  .replace('{message}', get_message(data['attending'] != 'None'))
+            send_mail('RSVP Confirmation for Smith-Henry Wedding',
+                      'Thank you! We\'ve recorded your response.',
+                      'samuel.e.henry97@gmail.com',
+                      [data['email']],
+                      fail_silently=True,
+                      html_message=html)
+            sendTelegram(telegram_confirmation.format(data['name'], data['email'], data['number'], attending[data['attending']], data['message']))
             rsvp = form.save()
-            messages.success(request, 'Thank you! Your response has been recorded.')
+            messages.success(request, 'Thank you! Your response has been recorded. We\'ll send a confirmation email shortly.')
             return redirect('home')
         else:
             messages.warning(request, 'Please fix the errors below.')
@@ -44,4 +53,4 @@ def sendTelegram(message):
     client.sendMessage('784263152', message)
 
 attending = {'Both': 'Attending Ceremony and Reception', 'Ceremony': 'Attending Ceremony Only', 'None': 'Not Attending'}
-client = telepot.Bot('928777303:AAExgj_w0_J1yTQLzE4EYHYE-IDTHv4-iKY')
+client = telepot.Bot(os.environ['WEDDING_BOT'])
