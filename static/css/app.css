@@ -6386,15 +6386,12 @@ header {
       left: 50%;
       top: 30px;
       width: 1px; } }
-  @media (min-width: 768px) and (min-width: 768px) and (max-width: 991.98px) {
+  @media (min-width: 768px) and (max-width: 1199.98px) {
     .tline::before {
-      bottom: 180px; } }
-  @media (min-width: 768px) and (min-width: 992px) and (max-width: 1199.98px) {
-    .tline::before {
-      bottom: 260px; } }
+      bottom: 280px; } }
   @media (min-width: 768px) and (min-width: 1200px) {
     .tline::before {
-      bottom: 330px; } }
+      bottom: 300px; } }
   .tline > .row {
     margin-bottom: 5rem; }
   .tline .tline-title {
@@ -6602,8 +6599,7 @@ header {
     #party .party-card .party .party-img {
       flex-grow: 1;
       overflow: hidden;
-      height: 100%;
-      background-color: green; }
+      height: 100%; }
       #party .party-card .party .party-img img {
         overflow: hidden;
         width: 100%;

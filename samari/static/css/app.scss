@@ -396,9 +396,8 @@ header {
       top: 30px;
       width: 1px;
 
-      @include media-breakpoint-only(md) { bottom: 180px; }
-      @include media-breakpoint-only(lg) { bottom: 260px; }
-      @include media-breakpoint-only(xl) { bottom: 330px; }
+      @include media-breakpoint-down(lg) { bottom: 280px; }
+      @include media-breakpoint-only(xl) { bottom: 300px; }
     }
   }
 
@@ -666,7 +665,7 @@ header {
         flex-grow: 1;
         overflow: hidden;
         height: 100%;
-        background-color: green;
+        
         img {
           overflow: hidden;
           width: 100%;
