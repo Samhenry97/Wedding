@@ -7,6 +7,7 @@ from django.core.mail import send_mail
 import telepot
 from .email_template import rsvp_confirmation, telegram_confirmation, get_message
 from datetime import datetime
+from pytz import timezone
 import os
 from .models import RSVP
 from openpyxl import Workbook
@@ -89,6 +90,8 @@ def guests(request):
     for i, rsvp in enumerate(rsvps):
         for j, field in enumerate(fields):
             value = getattr(rsvp, field)
+            if type(value) == datetime:
+                value = value.astimezone(timezone('America/New_York')).strftime('%x %X')
             widths[j] = max(widths[j], len(str(value)))
             sheet.cell(row=i+2, column=j+1).value = value
 
@@ -118,7 +121,7 @@ def guests(request):
         sheet.column_dimensions[get_column_letter(i+1)].width = max(width, 18)
 
     response = HttpResponse(content=save_virtual_workbook(book), content_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
-    response['Content-Disposition'] = 'attachment; filename=Guests_{}.xlsx'.format(datetime.now().strftime('%m_%d_%Y'))
+    response['Content-Disposition'] = 'attachment; filename=Guests_{}.xlsx'.format(timezone('America/New_York').localize(datetime.now()).strftime('%m_%d_%Y'))
     return response
 
 def sendTelegram(message):
