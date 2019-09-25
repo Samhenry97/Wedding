@@ -20,6 +20,6 @@ handler404 = 'samari.views.handler404'
 handler500 = 'samari.views.handler500'
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls, name='login'),
     path('', include('samari.urls'))
 ]

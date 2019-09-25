@@ -16,7 +16,7 @@ message_exists.short_description = 'Message'
 
 
 class RSVPAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'number', 'attending', message_exists)
+    list_display = ('name', 'email', 'number', 'attending', message_exists, 'created')
 
 
 admin.site.register(RSVP, RSVPAdmin)

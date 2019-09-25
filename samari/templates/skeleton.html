@@ -60,6 +60,13 @@
   {% endblock %}
 </head>
 <body>
+  {% if user.is_authenticated %}
+    <a href="{% url 'guests' %}" class="guests">
+      <p class="text-center"><i class="fas fa-users"></i></p>
+      <p>Download RSVP's</p>
+    </a>
+  {% endif %}
+
   {% if messages %}
     <ul class="messages">
         {% for message in messages %}

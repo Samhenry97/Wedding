@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.core.validators import RegexValidator, MaxValueValidator, MinValueValidator
-
+from datetime import datetime
 
 class RSVP(models.Model):
     name = models.CharField(max_length=256)
@@ -11,6 +11,7 @@ class RSVP(models.Model):
     number = models.IntegerField(default=1)
     message = models.TextField(max_length=1024)
     attending = models.CharField(max_length=256, default='Yes')
+    created = models.DateTimeField(auto_now_add=True, blank=True)
 
     def __str__(self):
         return '{} ({}): {}'.format(self.name, self.email, self.number)

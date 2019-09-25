@@ -108,13 +108,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
 
@@ -132,7 +128,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = os.environ['WEDDING_EMAIL']
 EMAIL_HOST_PASSWORD = os.environ['WEDDING_PASS']
 
-LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = '/admin/login'
+LOGIN_REDIRECT_URL = 'home'
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 

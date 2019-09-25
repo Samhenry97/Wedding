@@ -6728,6 +6728,25 @@ textarea {
   .fancybox-caption h2 {
     color: #700808; }
 
+.guests {
+  z-index: 999;
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #700808;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.75);
+  transition-duration: 0.25s; }
+  .guests:hover {
+    box-shadow: 4px 4px 10px 0 black;
+    bottom: 18px;
+    right: 18px; }
+  .guests p {
+    margin: 0;
+    text-decoration: none;
+    color: white; }
+
 footer {
   background: none;
   background-color: #2D2C35;
