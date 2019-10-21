@@ -10,7 +10,7 @@ class RSVP(models.Model):
     email = models.EmailField()
     number = models.IntegerField(default=1)
     message = models.TextField(max_length=1024)
-    attending = models.CharField(max_length=256, default='Yes')
+    attending = models.CharField(max_length=256, default='Both')
     created = models.DateTimeField(auto_now_add=True, blank=True)
 
     def __str__(self):
