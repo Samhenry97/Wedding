@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
+from django.db.models import Q, Sum
 from .forms import RSVPForm
 from django.core.mail import send_mail
 import telepot
@@ -14,6 +15,10 @@ from openpyxl import Workbook
 from openpyxl.writer.excel import save_virtual_workbook
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import *
+
+def global_context(request):
+    coming = RSVP.objects.filter(~Q(attending='None')).aggregate(Sum('number'))['number__sum']
+    return { 'total': coming }
 
 def handler404(request, exception, template_name='404.html'):
     response = render(request, template_name)

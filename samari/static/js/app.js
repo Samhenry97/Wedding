@@ -12,7 +12,7 @@ $(document).ready(function() {
   });
 
   // Smooth Scroll
-  $('a[href*="#"]').on('click', function(event) {
+  $('a[href*="#"]').click(function(event) {
     if(!this.getAttribute('href').startsWith('#')) return;
     if(this.getAttribute('href').startsWith('#gallery')) return;
     event.preventDefault();
@@ -22,6 +22,13 @@ $(document).ready(function() {
       1000,
       'easeInOutCubic'
     );
+  });
+
+  // Disable submit after click
+  $submit = $('#rsvp_button');
+  $submit.click(function(event) {
+    $submit.attr('disabled', true);
+    $submit.html('<i class="fas fa-spinner fa-spin"></i>');
   });
 
   // Ensure on-scroll animations are correct
