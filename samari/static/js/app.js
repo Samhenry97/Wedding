@@ -26,7 +26,7 @@ $(document).ready(function() {
 
   // Disable submit after click
   $submit = $('#rsvp_button');
-  $submit.click(function(event) {
+  $('form').submit(function() {
     $submit.attr('disabled', true);
     $submit.html('<i class="fas fa-spinner fa-spin"></i>');
   });
